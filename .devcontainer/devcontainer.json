@@ -7,6 +7,14 @@
 	"features": {
 		"ghcr.io/devcontainers/features/github-cli:1": {},
 		"ghcr.io/itsmechlark/features/postgresql:1": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"mtxr.sqltools",
+				"cmoog.sqlnotebook"
+			]
+		}
 	}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
