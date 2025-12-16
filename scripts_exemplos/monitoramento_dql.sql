@@ -1,6 +1,6 @@
 select concat(nome, '-', estado) as "Cidade-estado" from dbo.cidade;
 
-select * from dbo.localizacao;
+select  count(*)  from  dbo.cidade group by estado having estado in ('BA', 'RN');
 
 select precip_pluviom, (tempo_max - tempo_min) as variacao,
     dh_coleta::date as dia
